@@ -22,17 +22,23 @@
     <title>Tip Calculator</title>
   </head>
   <body>
-    <div class="container p-5">
+    <div class="d-flex justify-content-center">
+      <div class="logo">
+        SPLI <br />
+        TIER
+      </div>
+    </div>
+    <div class="container main p-5">
       <div class="bg-white p-5 wrapper shadow-lg">
         <div class="row">
           <div class="col-md-6 col-sm-12">
-            <label>Bill</label>
+            <label class="label">Bill</label>
 
             <!-- ------------ -->
             <div class="input-group flex-nowrap">
               <div class="input-group-prepend">
                 <span class="input-group-text icon"
-                  ><i class="fa fa-rupee"></i
+                  ><i class="fa fa-rupee label"></i
                 ></span>
               </div>
               <input
@@ -44,18 +50,18 @@
 
             <!-- ------------ -->
             <div class="my-4">
-              <label>Select Tip %</label>
+              <label class="label">Select Tip %</label>
               <input
                 type="text"
-                placeholder="Tip"
+                placeholder="Tip %"
                 class="form-control tip-input mb-2 text-right"
               />
             </div>
-            <label>Number of People</label>
+            <label class="label">Number of People</label>
             <div class="input-group flex-nowrap mb-2">
               <div class="input-group-prepend">
                 <span class="input-group-text icon"
-                  ><i class="fa fa-user"></i
+                  ><i class="fa fa-user label"></i
                 ></span>
               </div>
               <input
@@ -84,12 +90,12 @@
                 <div class="amount result">₹ 0.00</div>
               </div>
 
+              <button class="calculate">CALCULATE</button>
               <button class="reset">RESET</button>
             </div>
           </div>
         </div>
       </div>
-      <button class="calculate mt-4">Test Calculate</button>
     </div>
 
     <!-- Optional JavaScript; choose one of the two! -->

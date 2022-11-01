@@ -6,7 +6,7 @@ $Grayish_cyan: hsl(184, 14%, 56%);
 $Light_grayish_cyan: hsl(185, 41%, 84%);
 $Very_light_grayish_cyan: hsl(189, 41%, 97%);
 $White: hsl(0, 0%, 100%);
-$Dark_cyan: #3bdec6;
+$Dark_cyan: #36d1b9;
 
 body {
   background: hsl(185, 41%, 84%);
@@ -14,7 +14,7 @@ body {
   font-weight: 700;
 }
 .wrapper {
-  border-radius: 16px;
+  border-radius: 30px;
 }
 .right-div {
   background: $Very_dark_cyan;
@@ -33,15 +33,17 @@ body {
   font-size: 35px;
   color: $Dark_cyan;
 }
-.reset {
+.reset,
+.calculate {
   // position: absolute;
   // bottom: 20px;
+
   width: 100%;
   border-radius: 7px;
   border: none;
   padding: 10px;
   font-weight: 700;
-  margin-top: 10px;
+  margin-top: 30px;
   background: $Dark_cyan;
   color: $Very_dark_cyan;
   &:hover {
@@ -54,11 +56,35 @@ body {
 .bill-input,
 .tip-input {
   background-color: $Very_light_grayish_cyan;
+  color: $Very_dark_cyan;
   border: none;
   font-size: 22px;
+  font-weight: 700;
 }
 
 .icon {
   background: $Very_light_grayish_cyan;
   border: none;
+}
+.label {
+  color: $Dark_grayish_cyan;
+}
+.logo {
+  letter-spacing: 10px;
+  margin: 4rem;
+  font-size: 25px;
+  color: $Very_dark_cyan;
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding: 0 !important;
+  }
+  .wrapper {
+    border-radius: 30px 30px 0 0;
+    padding: 20px !important;
+  }
+  .right-div {
+    margin-top: 1rem;
+  }
 }
