@@ -1,0 +1,64 @@
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+
+$Very_dark_cyan: hsl(183, 100%, 15%);
+$Dark_grayish_cyan: hsl(186, 14%, 43%);
+$Grayish_cyan: hsl(184, 14%, 56%);
+$Light_grayish_cyan: hsl(185, 41%, 84%);
+$Very_light_grayish_cyan: hsl(189, 41%, 97%);
+$White: hsl(0, 0%, 100%);
+$Dark_cyan: #3bdec6;
+
+body {
+  background: hsl(185, 41%, 84%);
+  font-family: Space Mono;
+  font-weight: 700;
+}
+.wrapper {
+  border-radius: 16px;
+}
+.right-div {
+  background: $Very_dark_cyan;
+  border-radius: 1rem;
+  color: $White;
+  height: 100%;
+}
+.total-text > div:nth-child(1) {
+  color: $Very_light_grayish_cyan;
+}
+.total-text > div:nth-child(2) {
+  color: $Light_grayish_cyan;
+  font-size: 12px;
+}
+.amount {
+  font-size: 35px;
+  color: $Dark_cyan;
+}
+.reset {
+  // position: absolute;
+  // bottom: 20px;
+  width: 100%;
+  border-radius: 7px;
+  border: none;
+  padding: 10px;
+  font-weight: 700;
+  margin-top: 10px;
+  background: $Dark_cyan;
+  color: $Very_dark_cyan;
+  &:hover {
+    background: $Light_grayish_cyan;
+    transition: 0.3s;
+  }
+}
+
+.people-input,
+.bill-input,
+.tip-input {
+  background-color: $Very_light_grayish_cyan;
+  border: none;
+  font-size: 22px;
+}
+
+.icon {
+  background: $Very_light_grayish_cyan;
+  border: none;
+}
