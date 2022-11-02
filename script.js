@@ -16,8 +16,10 @@ calbtn.onclick = function () {
   if (bill.value == "" || tip.value == "" || people.value == "") {
     return alert("Missing Value");
   } else {
-    result.innerHTML = `₹ ${TotalBill.toFixed(2)}`;
-    totalTip.innerHTML = `₹ ${tipAmount.toFixed(2)}`;
+    result.innerHTML = `<i class="fa fa-rupee mr-3  "></i
+    >${TotalBill.toFixed(2)}`;
+    totalTip.innerHTML = `<i class="fa fa-rupee mr-3"></i
+    >${tipAmount.toFixed(2)}`;
   }
 };
 
@@ -25,11 +27,20 @@ bill.onkeyup = function () {
   console.log(parseInt(bill.value));
 };
 
+const defaultAmount = document.querySelectorAll('.amount')
+// .innerHTML = `yoooooooooo`;
+for (var i=0;i < defaultAmount.length;i++){
+  var str = defaultAmount[i].innerHTML;
+  defaultAmount[i].innerHTML = `yooooooooo`;
+  // console.log(defaultAmount[i])
+}
+
+
 
 document.querySelector(".reset").onclick = function () {
   bill.value = "";
   tip.value = "";
   people.value = "";
-  result.innerHTML = "₹ 0.00";
-  totalTip.innerHTML = "₹ 0.00";
+  // result.innerHTML = `${defaultAmount}`;
+  // totalTip.innerHTML =  `${defaultAmount}`;
 };
