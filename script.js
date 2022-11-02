@@ -21,9 +21,9 @@ calbtn.onclick = function () {
   }
 };
 
-bill.onkeyup = function () {
-  console.log(parseInt(bill.value));
-};
+// bill.onkeyup = function () {
+//   console.log(parseInt(bill.value));
+// };
 
 // for adding default value 0
 let finalRs = document.querySelectorAll(".result-rs");
