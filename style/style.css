@@ -56,6 +56,12 @@ body {
   font-size: 22px;
   font-weight: 700;
 }
+.people-input:focus,
+.bill-input:focus,
+.tip-input:focus {
+  border-color: #36d1b9;
+  box-shadow: 0 0 0 0.2rem #36d1b9;
+}
 
 .icon {
   background: hsl(189deg, 41%, 97%);
@@ -68,7 +74,7 @@ body {
 
 .logo {
   letter-spacing: 10px;
-  margin: 4rem;
+  margin: 3rem;
   font-size: 25px;
   color: hsl(183deg, 100%, 15%);
 }
