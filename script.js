@@ -21,10 +21,10 @@ calbtn.onclick = function () {
   }
 };
 
-// bill.onkeyup = function () {
-//   console.log(bill.value);
-//   result.innerHTML = `${bill.value}`;
-// };
+bill.onkeyup = function () {
+  console.log(parseInt(bill.value));
+};
+
 
 document.querySelector(".reset").onclick = function () {
   bill.value = "";
