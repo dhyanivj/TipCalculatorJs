@@ -5,7 +5,7 @@ const calbtn = document.querySelector(".calculate");
 const result = document.querySelector(".result");
 const totalTip = document.querySelector(".totalTip");
 
-function a() {
+function cal() {
   billValue = parseInt(bill.value);
   tipValue = parseInt(tip.value);
   TotalBill = (billValue + (billValue * tipValue) / 100) / people.value;
