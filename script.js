@@ -1,7 +1,7 @@
 const bill = document.querySelector(".bill-input");
 const tip = document.querySelector(".tip-input");
 const people = document.querySelector(".people-input");
-const calbtn = document.querySelector(".calculate");
+// const calbtn = document.querySelector(".calculate");
 const result = document.querySelector(".result");
 const totalTip = document.querySelector(".totalTip");
 
