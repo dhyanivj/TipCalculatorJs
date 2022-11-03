@@ -5,7 +5,7 @@ const calbtn = document.querySelector(".calculate");
 const result = document.querySelector(".result");
 const totalTip = document.querySelector(".totalTip");
 
-calbtn.onclick = function () {
+function a() {
   billValue = parseInt(bill.value);
   tipValue = parseInt(tip.value);
   TotalBill = (billValue + (billValue * tipValue) / 100) / people.value;
@@ -14,12 +14,12 @@ calbtn.onclick = function () {
   // console.log(tipAmount);
 
   if (bill.value == "" || tip.value == "" || people.value == "") {
-    return alert("Missing Value");
+    // return alert("Missing Value");
   } else {
     result.innerHTML = `${TotalBill.toFixed(2)}`;
     totalTip.innerHTML = `${tipAmount.toFixed(2)}`;
   }
-};
+}
 
 // bill.onkeyup = function () {
 //   console.log(parseInt(bill.value));

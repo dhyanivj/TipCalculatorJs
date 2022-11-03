@@ -75,7 +75,7 @@
 
     <link rel="stylesheet" href="style/style.css" />
   </head>
-  <body>
+  <body onload="a();">
     <div class="d-flex justify-content-center">
       <div class="logo">
         SPLI <br />
@@ -99,6 +99,7 @@
                 type="number"
                 class="form-control border-left-0 text-right bill-input"
                 placeholder="0"
+                onkeyup="a();"
               />
             </div>
 
@@ -109,6 +110,7 @@
                 type="number"
                 placeholder="Tip %"
                 class="form-control tip-input mb-2 text-right"
+                onkeyup="a();"
               />
             </div>
             <label class="label">Number of People</label>
@@ -122,6 +124,7 @@
                 type="number"
                 class="form-control border-left-0 people-input text-right"
                 placeholder="0"
+                onkeyup="a();"
               />
             </div>
           </div>
@@ -150,7 +153,7 @@
                 </div>
               </div>
 
-              <button class="calculate">CALCULATE</button>
+              <!-- <button class="calculate">CALCULATE</button> -->
               <button class="reset">RESET</button>
             </div>
           </div>
