@@ -9,9 +9,7 @@ function a() {
   billValue = parseInt(bill.value);
   tipValue = parseInt(tip.value);
   TotalBill = (billValue + (billValue * tipValue) / 100) / people.value;
-  //   console.log(TotalBill);
   tipAmount = tipValue / people.value;
-  // console.log(tipAmount);
 
   if (bill.value == "" || tip.value == "" || people.value == "") {
     // return alert("Missing Value");
@@ -20,10 +18,6 @@ function a() {
     totalTip.innerHTML = `${tipAmount.toFixed(2)}`;
   }
 }
-
-// bill.onkeyup = function () {
-//   console.log(parseInt(bill.value));
-// };
 
 // for adding default value 0
 let finalRs = document.querySelectorAll(".result-rs");
